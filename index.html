@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main>
       <section id="profile">
-        <img src="/images/image-jeremy.png" alt="jeremy-robson" />
         <div>
-          <p>Report for</p>
-          <h2>Jeremy Robson</h2>
+          <img src="/images/image-jeremy.png" alt="jeremy-robson" />
+          <div id="name-container">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
         </div>
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+        <div class="options">
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div>
       </section>
 
       <section id="cards-container">
