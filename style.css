@@ -1,0 +1,97 @@
+/* main style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: hsl(226, 43%, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 6rem;
+  width: 90%;
+  max-width: 1300px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* profile card */
+#profile {
+  background: hsl(235, 46%, 20%);
+}
+
+#profile > div {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+#profile img {
+  margin-right: 1rem;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#profile div:nth-of-type(1) {
+  background: hsl(246, 80%, 60%);
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+
+/* data-cards */
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cards {
+  padding: 1.5rem;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.cards-header,
+.hrs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hrs {
+  padding-top: 0.5rem;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
