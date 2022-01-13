@@ -136,7 +136,7 @@ article {
 }
 
 .work-card span {
-  content: url(/images/icon-work.svg);
+  content: url('/images/icon-work.svg');
 }
 
 .play-card {
@@ -144,7 +144,7 @@ article {
 }
 
 .play-card span {
-  content: url(/images/icon-play.svg);
+  content: url('/images/icon-play.svg');
 }
 
 .study-card {
@@ -152,7 +152,7 @@ article {
 }
 
 .study-card span {
-  content: url(/images/icon-study.svg);
+  content: url('/images/icon-study.svg');
 }
 
 .exercise-card {
@@ -160,7 +160,7 @@ article {
 }
 
 .exercise-card span {
-  content: url(/images/icon-exercise.svg);
+  content: url('/images/icon-exercise.svg');
 }
 
 .social-card {
@@ -168,7 +168,7 @@ article {
 }
 
 .social-card span {
-  content: url(/images/icon-social.svg);
+  content: url('/images/icon-social.svg');
 }
 
 .care-card {
@@ -176,7 +176,7 @@ article {
 }
 
 .care-card span {
-  content: url(/images/icon-self-care.svg);
+  content: url('/images/icon-self-care.svg');
 }
 
 @media screen and (min-width: 900px) {
