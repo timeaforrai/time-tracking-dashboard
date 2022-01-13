@@ -118,7 +118,7 @@ h3 {
 }
 
 /* cards colored icons */
-article span {
+article img {
   position: absolute;
   top: -8px;
   right: 20px;
@@ -135,48 +135,24 @@ article {
   background: hsl(15, 100%, 70%);
 }
 
-.work-card span {
-  content: url('/images/icon-work.svg');
-}
-
 .play-card {
   background: hsl(195, 74%, 62%);
-}
-
-.play-card span {
-  content: url('/images/icon-play.svg');
 }
 
 .study-card {
   background: hsl(348, 100%, 68%);
 }
 
-.study-card span {
-  content: url('/images/icon-study.svg');
-}
-
 .exercise-card {
   background: hsl(145, 58%, 55%);
-}
-
-.exercise-card span {
-  content: url('/images/icon-exercise.svg');
 }
 
 .social-card {
   background: hsl(264, 64%, 52%);
 }
 
-.social-card span {
-  content: url('/images/icon-social.svg');
-}
-
 .care-card {
   background: hsl(43, 84%, 65%);
-}
-
-.care-card span {
-  content: url('/images/icon-self-care.svg');
 }
 
 @media screen and (min-width: 900px) {
