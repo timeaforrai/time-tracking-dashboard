@@ -16,10 +16,12 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
-  margin: 20% auto;
-  width: 85%;
-  max-width: 900px;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3rem 0;
 }
 
 h1 {
@@ -39,6 +41,7 @@ h3 {
 
 /* profile card */
 #profile-container {
+  width: 85%;
   background: hsl(235, 46%, 20%);
   border-radius: 1rem;
 }
@@ -66,11 +69,12 @@ h3 {
 .options {
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem 0;
+  padding-bottom: 1rem;
 }
 
 .options p {
   color: hsl(235, 45%, 61%);
+  padding-top: 1rem;
 }
 
 #weekly {
@@ -84,6 +88,8 @@ h3 {
 
 /* data-cards */
 #cards-container {
+  width: 85%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -169,21 +175,20 @@ article {
     font-size: 40px;
   }
 
+  #profile-container {
+    width: 200px;
+  }
+
   .profile {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 200px;
+    padding-bottom: 4.75rem;
   }
 
   .options {
     display: block;
-
-    padding: 0 0 0 1.5rem;
-  }
-
-  .options p {
-    margin: 1.5rem 0;
+    padding-left: 1.5rem;
   }
 
   .profile img {
