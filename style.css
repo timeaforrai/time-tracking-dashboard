@@ -11,18 +11,15 @@
 
 body {
   background: hsl(226, 43%, 10%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-top: 6rem;
+  gap: 1.5rem;
+  margin: 20% auto;
   width: 85%;
-  max-width: 1300px;
+  max-width: 900px;
 }
 
 h1 {
@@ -31,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -41,30 +38,28 @@ h3 {
 }
 
 /* profile card */
-#profile {
+#profile-container {
   background: hsl(235, 46%, 20%);
   border-radius: 1rem;
 }
 
-#profile > div {
+.profile {
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
+  background: hsl(246, 80%, 60%);
+  border-radius: 1rem;
 }
 
-#profile img {
+.profile img {
   margin-right: 1rem;
   width: 50px;
   border: 2px solid white;
   border-radius: 50%;
 }
 
-#profile div:nth-child(1) {
-  background: hsl(246, 80%, 60%);
-  border-radius: 1rem;
-}
-
 #name-container p {
+  font-size: 14px;
   color: hsl(236, 100%, 87%);
 }
 
@@ -91,7 +86,7 @@ h3 {
 #cards-container {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .cards {
@@ -99,6 +94,11 @@ h3 {
   padding: 1.5rem;
   background-color: hsl(235, 46%, 20%);
   border-radius: 1rem;
+}
+
+.cards:hover {
+  background: hsl(235, 45%, 61%);
+  cursor: pointer;
 }
 
 .cards-header,
@@ -114,12 +114,13 @@ h3 {
 
 .hrs p {
   color: hsl(236, 100%, 87%);
+  font-size: 12px;
 }
 
 /* cards colored icons */
 article span {
   position: absolute;
-  top: -10px;
+  top: -8px;
   right: 20px;
 }
 
@@ -177,10 +178,52 @@ article {
 .care-card span {
   content: url(/images/icon-self-care.svg);
 }
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
+
+@media screen and (min-width: 900px) {
+  main {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .profile {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 200px;
+  }
+
+  .options {
+    display: block;
+
+    padding: 0 0 0 1.5rem;
+  }
+
+  .options p {
+    margin: 1.5rem 0;
+  }
+
+  .profile img {
+    margin-bottom: 1.5rem;
+  }
+
+  #cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hrs {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: 150px;
+  }
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
