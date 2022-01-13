@@ -6,6 +6,7 @@
   color: white;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
+  font-size: 18px;
 }
 
 body {
@@ -20,12 +21,13 @@ main {
   flex-direction: column;
   gap: 1.2rem;
   margin-top: 6rem;
-  width: 90%;
+  width: 85%;
   max-width: 1300px;
 }
 
 h1 {
   font-weight: 400;
+  font-size: 24px;
 }
 
 h2 {
@@ -35,12 +37,13 @@ h2 {
 
 h3 {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* profile card */
 #profile {
   background: hsl(235, 46%, 20%);
+  border-radius: 1rem;
 }
 
 #profile > div {
@@ -56,14 +59,32 @@ h3 {
   border-radius: 50%;
 }
 
-#profile div:nth-of-type(1) {
+#profile div:nth-child(1) {
   background: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+}
+
+#name-container p {
+  color: hsl(236, 100%, 87%);
 }
 
 .options {
   display: flex;
   justify-content: space-around;
   padding: 1.5rem 0;
+}
+
+.options p {
+  color: hsl(235, 45%, 61%);
+}
+
+#weekly {
+  color: white;
+}
+
+.options p:hover {
+  color: white;
+  cursor: pointer;
 }
 
 /* data-cards */
@@ -74,20 +95,88 @@ h3 {
 }
 
 .cards {
+  position: relative;
   padding: 1.5rem;
   background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
 }
 
 .cards-header,
 .hrs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hrs {
   padding-top: 0.5rem;
 }
 
+.hrs p {
+  color: hsl(236, 100%, 87%);
+}
+
+/* cards colored icons */
+article span {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+article {
+  padding-top: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.work-card {
+  background: hsl(15, 100%, 70%);
+}
+
+.work-card span {
+  content: url(/images/icon-work.svg);
+}
+
+.play-card {
+  background: hsl(195, 74%, 62%);
+}
+
+.play-card span {
+  content: url(/images/icon-play.svg);
+}
+
+.study-card {
+  background: hsl(348, 100%, 68%);
+}
+
+.study-card span {
+  content: url(/images/icon-study.svg);
+}
+
+.exercise-card {
+  background: hsl(145, 58%, 55%);
+}
+
+.exercise-card span {
+  content: url(/images/icon-exercise.svg);
+}
+
+.social-card {
+  background: hsl(264, 64%, 52%);
+}
+
+.social-card span {
+  content: url(/images/icon-social.svg);
+}
+
+.care-card {
+  background: hsl(43, 84%, 65%);
+}
+
+.care-card span {
+  content: url(/images/icon-self-care.svg);
+}
 /* .attribution {
   font-size: 11px;
   text-align: center;
