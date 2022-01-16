@@ -12,9 +12,16 @@ async function updateDashboard(time) {
     const data = await fetch('./data.json')
     const records = await data.json()
     changeStats(records, time)
+    changeActive(time)
   } catch (error) {
     console.error(error)
   }
+}
+
+function changeActive(time) {
+  let active = document.getElementsByClassName('active')[0]
+  active ? active.classList.remove('active') : null
+  document.getElementById(`${time}`).classList.add('active')
 }
 
 function changeStats(records, time) {

@@ -85,9 +85,13 @@ button:hover {
   padding: 1rem 0;
 }
 
-#weekly {
+.active {
   color: white;
 }
+
+/* #weekly {
+  color: white;
+} */
 
 /* data-cards */
 #cards-container {
