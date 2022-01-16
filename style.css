@@ -39,6 +39,18 @@ h3 {
   font-weight: 300;
 }
 
+button {
+  border: none;
+  background-color: inherit;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
 /* profile card */
 #profile-container {
   width: 85%;
@@ -69,21 +81,12 @@ h3 {
 .options {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 1rem;
-}
-
-.options p {
-  color: hsl(235, 45%, 61%);
-  padding-top: 1rem;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 #weekly {
   color: white;
-}
-
-.options p:hover {
-  color: white;
-  cursor: pointer;
 }
 
 /* data-cards */
@@ -124,7 +127,7 @@ h3 {
 }
 
 /* cards colored icons */
-article img {
+article > img {
   position: absolute;
   top: -8px;
   right: 20px;
@@ -175,6 +178,10 @@ article {
     font-size: 40px;
   }
 
+  button {
+    padding: 0.5rem 0;
+  }
+
   #profile-container {
     width: 200px;
   }
@@ -183,11 +190,14 @@ article {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding-bottom: 4.75rem;
+    width: 200px;
+    padding-bottom: 3.5rem;
   }
 
   .options {
-    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
     padding-left: 1.5rem;
   }
 
