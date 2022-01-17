@@ -48,7 +48,7 @@ function changeStats(records, time) {
             <div class="cards-header">
               <h2>${rec.title}</h2>
               <div>
-                <img src="/images/icon-ellipsis.svg" alt="3dot" />
+                <img src="images/icon-ellipsis.svg" alt="3dot" />
               </div>
             </div>
             <div class="hrs">
